@@ -2,7 +2,7 @@ import Button from "./components/Button";
 import ChildBox from "./components/ChildBox";
 import Input from "./components/Input";
 import Friend from "./components/Friend";
-import Form from "./components/form";
+import Form from "./components/Form";
 import Splitfrom from "./components/Splitfrom";
 import { useSplitContext } from "./context/States";
 
