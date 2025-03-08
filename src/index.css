@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@import "tailwindcss";
+
+
+@layer utilities {
+  .base-bg {
+    @apply bg-[#F7F7F7];
+  }
+
+  .card-bg {
+    @apply bg-[#ffd2ec];
+  }
+
+  .p-txt-loan {
+    @apply text-red-500
+  }
+  .p-txt-recive {
+    @apply text-green-500
+  }
+
+  .main-txt {
+    @apply text-2xl font-[700] ;
+  }
+
+  .p-txt   {
+    @apply text-[17px] font-[600];
+  }
+
+  .flex-center  {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-gap  {
+    @apply flex items-center;
+  }
+
+  .flex-col  {
+    @apply flex flex-col;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}
+
+@layer  components {
+  .friend-box {
+    @apply h-22 w-full relative  rounded-md;
+  }
+
+}
+
+@layer base {
+  .layout {
+    @apply h-screen w-full max-w-screen relative overflow-hidden px-3 py-2;
+  }
+
+  .container {
+    @apply w-full h-full p-4 relative flex-col;
+  }
+
+  .childbox {
+    @apply  w-full h-1/2 relative ;
+  }
+
+  .btn {
+    @apply px-5  py-2 rounded-full text-[16px] font-[600] bg-[#FFA725] hover:bg-[#ffb546] cursor-pointer;
+  }
+ 
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
